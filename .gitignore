@@ -1,0 +1,13 @@
+.*
+Thumbs.db
+!.gitignore
+[Oo]bj/
+[Bb]in/
+*.user
+*.suo
+*.cache
+*.avi
+*.mov
+*.MOV
+UploadedFiles/
+_ReSharper.*
