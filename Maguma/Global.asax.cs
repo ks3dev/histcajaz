@@ -44,8 +44,6 @@ namespace Maguma
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
-
-            BundleTable.Bundles.RegisterTemplateBundles();
         }
     }
 }
