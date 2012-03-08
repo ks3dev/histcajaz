@@ -4,11 +4,42 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    <link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Content/css")" rel="stylesheet" type="text/css" />
-    <link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Content/themes/base/css")" rel="stylesheet" type="text/css" />
+    <link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Public/css")" rel="stylesheet" type="text/css" />
     <script src="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Scripts/js")"></script>
+    <script src="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Scripts/External/js")"></script>
 </head>
-<body>
-    @RenderBody()
-</body>
+    <body>
+        <header>
+            <div id="menu" class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title"><a href="/">Maguma</a></p>
+                </div>
+                <div class="float-right">
+                    <nav>
+                        <ul id="menu"></ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="core">
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year</p>
+                </div>
+                <div class="float-right">
+                </div>
+            </div>
+        </footer>
+    </body>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $setupHistory.init(window, "#core", "#menu");
+        });
+    </script>
 </html>
