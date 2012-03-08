@@ -138,6 +138,15 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Public\CSS\Site.css" />
+    <Content Include="Public\JavaScript\External\jquery-1.7.1-vsdoc.js" />
+    <Content Include="Public\JavaScript\External\jquery-1.7.1.js" />
+    <Content Include="Public\JavaScript\External\jquery-ui-1.8.18.js" />
+    <Content Include="Public\JavaScript\External\jquery.unobtrusive-ajax.js" />
+    <Content Include="Public\JavaScript\External\jquery.validate-vsdoc.js" />
+    <Content Include="Public\JavaScript\External\jquery.validate.js" />
+    <Content Include="Public\JavaScript\External\jquery.validate.unobtrusive.js" />
+    <Content Include="Public\JavaScript\External\modernizr-2.5.3.js" />
+    <Content Include="Public\JavaScript\External\_references.js" />
     <Content Include="Public\JavaScript\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
