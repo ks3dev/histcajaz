@@ -21,7 +21,10 @@
                 <div id="debug-spa-check-counter" class="debug-only debug-big">only for debug</div>
                 <div class="float-right">
                     <nav>
-                        <ul id="menu"></ul>
+                        <ul id="menu">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Another page", "Index", "Elsewhere")</li>
+                        </ul>
                     </nav>
                 </div>
             </div>
