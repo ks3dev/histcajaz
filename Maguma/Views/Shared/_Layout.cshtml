@@ -10,6 +10,7 @@
     <script src="~/Public/JavaScript/External/history.adapter.jquery.js"></script>
     <script src="~/Public/JavaScript/External/history.html4.js"></script>
     <script src="~/Public/JavaScript/History.Setup.js"></script>
+    <script src="~/Public/JavaScript/Debug.js"></script>
 </head>
     <body>
         <header>
@@ -17,12 +18,14 @@
                 <div class="float-left">
                     <p class="site-title"><a href="/">Maguma</a></p>
                 </div>
+                <div id="debug-spa-check-counter" class="debug-only debug-big">only for debug</div>
                 <div class="float-right">
                     <nav>
                         <ul id="menu"></ul>
                     </nav>
                 </div>
             </div>
+            <div class="header-edge"></div>
         </header>
         <div id="core">
             <section class="content-wrapper main-content clear-fix">
@@ -41,7 +44,8 @@
     </body>
     
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
+            $debug.startGlobalTicker($("#debug-spa-check-counter"));
             $setupHistory.init(window, "#core", "#menu");
         });
     </script>

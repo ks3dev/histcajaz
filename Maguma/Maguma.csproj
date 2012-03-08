@@ -138,6 +138,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Public\CSS\Site.css" />
+    <Content Include="Public\JavaScript\Debug.js" />
     <Content Include="Public\JavaScript\External\_references.history.js" />
     <Content Include="Public\JavaScript\External\history.adapter.jquery.js" />
     <Content Include="Public\JavaScript\External\history.html4.js" />
