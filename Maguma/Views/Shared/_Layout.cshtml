@@ -1,16 +1,16 @@
+@{
+    Bundles.Reference("Public/CSS");
+    Bundles.Reference("Public/JavaScript/External");
+    Bundles.Reference("Public/JavaScript");
+}
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    <link href="~/Public/CSS/site.css" rel="stylesheet" type="text/css" />
-    <script src="~/Public/JavaScript/External/jquery-1.7.1.js"></script>
-    <script src="~/Public/JavaScript/External/history.js"></script>
-    <script src="~/Public/JavaScript/External/history.adapter.jquery.js"></script>
-    <script src="~/Public/JavaScript/External/history.html4.js"></script>
-    <script src="~/Public/JavaScript/History.Setup.js"></script>
-    <script src="~/Public/JavaScript/Debug.js"></script>
+    @Bundles.RenderStylesheets()
+    @Bundles.RenderScripts()
 </head>
     <body>
         <header>

@@ -1,6 +1,4 @@
-﻿/// <reference path="_references.js" />
-/// <reference path="External/_references.history.js" />
-// how to set up history.js: https://gist.github.com/854622
+﻿// how to set up history.js: https://gist.github.com/854622
 
 window.$setupHistory = window.$setupHistory || {};
 

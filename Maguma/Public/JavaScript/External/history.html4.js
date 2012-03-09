@@ -1,3 +1,4 @@
+/// <reference path="history.js" />
 /**
  * History.js HTML4 Support
  * Depends on the HTML5 Support

@@ -1,3 +1,4 @@
+/// <reference path="jquery-1.7.1.js" />
 /**
  * History.js jQuery Adapter
  * @author Benjamin Arthur Lupton <contact@balupton.com>
