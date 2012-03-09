@@ -1,4 +1,4 @@
-An empty "well structured" mvc4 app with some libraries blended in.
+An empty "well structured" mvc4 app with some libraries blended in. Maguma is just a name for the solution.
 
 Libraries/frameworks being added:
 
