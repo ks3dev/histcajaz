@@ -58,6 +58,9 @@
     <Reference Include="Cassette.Web">
       <HintPath>..\packages\Cassette.Web.1.1.0\lib\net40\Cassette.Web.dll</HintPath>
     </Reference>
+    <Reference Include="Cassette.Web.Jasmine">
+      <HintPath>..\packages\Cassette.Web.Jasmine.1.1.0\lib\net40\Cassette.Web.Jasmine.dll</HintPath>
+    </Reference>
     <Reference Include="Jurassic">
       <HintPath>..\packages\Jurassic.2.1.1\lib\Jurassic.dll</HintPath>
     </Reference>
@@ -169,6 +172,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Private\Jasmine\jasmine-html.js" />
+    <Content Include="Private\Jasmine\jasmine.css" />
+    <Content Include="Private\Jasmine\jasmine.js" />
+    <Content Include="Private\Jasmine\jasmine_favicon.png" />
+    <Content Include="Private\Jasmine\SpecHelper.js" />
+    <Content Include="Private\Specs\try1\t1.SpecRunner.html" />
+    <Content Include="Private\Specs\try1\t1.js" />
     <Content Include="Public\CSS\Site.css" />
     <Content Include="Public\JavaScript\Debug.js" />
     <Content Include="Public\JavaScript\External\history.adapter.jquery.js" />
@@ -209,6 +219,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Elsewhere\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Private\Jasmine\MIT.LICENSE" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

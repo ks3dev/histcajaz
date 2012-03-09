@@ -36,6 +36,10 @@ namespace Maguma
             bundles.Add<ScriptBundle>("Public/JavaScript/External", jsSearch);
             bundles.Add<ScriptBundle>("Public/JavaScript", jsSearch);
 
+            //jasmine tests, yes they're in this main project for a reason, so tests can run in the same context as the web app
+            //helps wih a few XSS issues in particular for file upload tests
+            bundles.Add<ScriptBundle>("Private/Specs/try1");
+
             // To combine files, try something like this instead:
             //   bundles.Add<StylesheetBundle>("Content");
             // In production mode, all of ~/Content will be combined into a single bundle.
