@@ -1,4 +1,5 @@
-﻿
+﻿/// <reference path="../../../Public/JavaScript/External/jquery-1.7.1.js" />
+    
 describe("The first set of jasmine tests bundled with Cassette", function() {
     var core;
 
@@ -8,9 +9,6 @@ describe("The first set of jasmine tests bundled with Cassette", function() {
 
     afterEach(function() {
         $("#temp-elements").empty();
-
-        $("#on-going-uploads").remove();
-        
     });
 
     it("should have created a new uploader", function() {
