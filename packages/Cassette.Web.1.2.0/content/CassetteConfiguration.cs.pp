@@ -1,10 +1,8 @@
-using System.IO;
-
-using Cassette.Configuration;
+﻿using Cassette.Configuration;
 using Cassette.Scripts;
 using Cassette.Stylesheets;
 
-namespace Maguma
+namespace $rootnamespace$
 {
     /// <summary>
     /// Configures the Cassette asset modules for the web application.
@@ -16,29 +14,11 @@ namespace Maguma
             // TODO: Configure your bundles here...
             // Please read http://getcassette.net/documentation/configuration
 
-            var cssSearch = new FileSearch
-            {
-                Pattern = "*.css",
-                SearchOption = SearchOption.TopDirectoryOnly
-            }; 
-            
-            var jsSearch = new FileSearch
-            {
-                Pattern = "*.js",
-                SearchOption = SearchOption.TopDirectoryOnly
-            };
-
             // This default configuration treats each file as a separate 'bundle'.
             // In production the content will be minified, but the files are not combined.
-            // So you probably want to tweak these defaults! 
-            bundles.Add<StylesheetBundle>("Public/CSS", cssSearch);
-
-            bundles.Add<ScriptBundle>("Public/JavaScript/External", jsSearch);
-            bundles.Add<ScriptBundle>("Public/JavaScript", jsSearch);
-
-            //jasmine tests, yes they're in this main project for a reason, so tests can run in the same context as the web app
-            //helps wih a few XSS issues in particular for file upload tests
-            bundles.Add<ScriptBundle>("Private/Specs/try1");
+            // So you probably want to tweak these defaults!
+            bundles.AddPerIndividualFile<StylesheetBundle>("Content");
+            bundles.AddPerIndividualFile<ScriptBundle>("Scripts");
 
             // To combine files, try something like this instead:
             //   bundles.Add<StylesheetBundle>("Content");
