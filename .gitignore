@@ -6,8 +6,8 @@ Thumbs.db
 *.user
 *.suo
 *.cache
-*.avi
-*.mov
-*.MOV
+*.[Aa][Vv][Ii]
+*.[Mm][Oo][Vv]
 UploadedFiles/
 _ReSharper.*
+_UpgradeReport_Files/
