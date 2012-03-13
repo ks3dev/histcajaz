@@ -200,10 +200,13 @@
     <Content Include="Private\Jasmine\jasmine.js" />
     <Content Include="Private\Jasmine\jasmine_favicon.png" />
     <Content Include="Private\Jasmine\SpecHelper.js" />
+    <Content Include="Private\Specs\libs\fileuploader-jasmine-tests.js" />
+    <Content Include="Private\Specs\libs\libs.SpecRunner.html" />
     <Content Include="Private\Specs\try1\t1.SpecRunner.html" />
     <Content Include="Private\Specs\try1\t1.js" />
     <Content Include="Public\CSS\Site.css" />
     <Content Include="Public\JavaScript\Debug.js" />
+    <Content Include="Public\JavaScript\External\fileuploader.js" />
     <Content Include="Public\JavaScript\External\history.adapter.jquery.js" />
     <Content Include="Public\JavaScript\External\history.html4.js" />
     <Content Include="Public\JavaScript\External\history.js" />

@@ -39,6 +39,7 @@ namespace Maguma
             //jasmine tests, yes they're in this main project for a reason, so tests can run in the same context as the web app
             //helps wih a few XSS issues in particular for file upload tests
             bundles.Add<ScriptBundle>("Private/Specs/try1");
+            bundles.Add<ScriptBundle>("Private/Specs/libs");
 
             // To combine files, try something like this instead:
             //   bundles.Add<StylesheetBundle>("Content");
