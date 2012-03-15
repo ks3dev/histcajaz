@@ -202,7 +202,7 @@
     <Content Include="Private\Jasmine\SpecHelper.js" />
     <Content Include="Private\Specs\try1\t1.SpecRunner.html" />
     <Content Include="Private\Specs\try1\t1.js" />
-    <Content Include="Public\CSS\blueprint\ie.css" />
+    <Content Include="Public\CSS\blueprint\ie\ie.css" />
     <Content Include="Public\CSS\blueprint\plugins\buttons\icons\cross.png" />
     <Content Include="Public\CSS\blueprint\plugins\buttons\icons\key.png" />
     <Content Include="Public\CSS\blueprint\plugins\buttons\icons\tick.png" />
@@ -222,7 +222,7 @@
     <Content Include="Public\CSS\blueprint\plugins\link-icons\screen.css" />
     <Content Include="Public\CSS\blueprint\plugins\rtl\readme.txt" />
     <Content Include="Public\CSS\blueprint\plugins\rtl\screen.css" />
-    <Content Include="Public\CSS\blueprint\print.css" />
+    <Content Include="Public\CSS\blueprint\print\print.css" />
     <Content Include="Public\CSS\blueprint\screen.css" />
     <Content Include="Public\CSS\Site.css" />
     <Content Include="Public\JavaScript\Debug.js" />
