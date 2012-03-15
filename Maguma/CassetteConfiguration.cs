@@ -31,7 +31,10 @@ namespace Maguma
             // This default configuration treats each file as a separate 'bundle'.
             // In production the content will be minified, but the files are not combined.
             // So you probably want to tweak these defaults! 
+
             bundles.Add<StylesheetBundle>("Public/CSS", cssSearch);
+            bundles.Add<StylesheetBundle>("Public/CSS/blueprint", cssSearch);
+            bundles.Add<StylesheetBundle>("Public/CSS/blueprint/plugins", cssSearch);
 
             bundles.Add<ScriptBundle>("Public/JavaScript/External", jsSearch);
             bundles.Add<ScriptBundle>("Public/JavaScript", jsSearch);
